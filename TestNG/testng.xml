@@ -1,0 +1,25 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Smoke Suite">
+
+    <test name="Smoke Test ON EDGE">
+        <classes>
+            <class name="Priority">
+              <methods>
+                  <include name="loginTest"/>
+              </methods>
+
+            </class>
+            <class name="Tests.Assertions">
+                <methods>
+                    <include name="invalidLoginTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Smoke Test ON chrome">
+       <packages>
+              <package name="Tests"/>
+       </packages>
+    </test>
+</suite>
