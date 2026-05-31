@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Login Functionality">
+    <test name="Logintest">
+        <groups>
+
+            <run>
+                <include name="smoke"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="Logintest"/>
+        </classes>
+    </test>
+
+</suite>
